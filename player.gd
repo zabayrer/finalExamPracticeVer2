@@ -31,3 +31,4 @@ func _on_body_entered(body):
 	hide()
 	enemyHit.play()
 	backgroundMusic.stop()
+	
