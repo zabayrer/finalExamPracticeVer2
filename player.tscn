@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck1humn4py3sr"]
+
+[ext_resource type="Script" path="res://finalExamPractice/player.gd" id="1_5w4sa"]
+[ext_resource type="Texture2D" uid="uid://ddmfyv6hcgdqp" path="res://finalExamPractice/icon.svg" id="1_ljtdh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_towl8"]
+size = Vector2(128, 128)
+
+[node name="player" type="Area2D"]
+script = ExtResource("1_5w4sa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_towl8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ljtdh")

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bioodnpqb1mxs"]
+
+[ext_resource type="PackedScene" uid="uid://ck1humn4py3sr" path="res://finalExamPractice/player.tscn" id="1_vrfeu"]
+
+[node name="world" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_vrfeu")]

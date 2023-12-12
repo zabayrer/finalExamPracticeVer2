@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://3405qkel6888"]
+
+[ext_resource type="Texture2D" uid="uid://cfiy4mfwy8y35" path="res://finalExamPractice/enemy.png" id="1_a4r2b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ntbsy"]
+radius = 183.068
+
+[node name="enemy" type="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(14, -13)
+shape = SubResource("CircleShape2D_ntbsy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_a4r2b")
