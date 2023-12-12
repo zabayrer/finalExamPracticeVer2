@@ -1,6 +1,8 @@
 extends Area2D
 
 @export var speed = 400
+@onready var backgroundMusic = $"../backgroundMusic"
+@onready var enemyHit = $"../enemyHit"
 var velocity
 
 func _process(delta):
@@ -27,3 +29,5 @@ func _process(delta):
 
 func _on_body_entered(body):
 	hide()
+	enemyHit.play()
+	backgroundMusic.stop()
