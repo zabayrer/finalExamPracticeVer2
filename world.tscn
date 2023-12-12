@@ -1,7 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://bioodnpqb1mxs"]
+[gd_scene load_steps=3 format=3 uid="uid://bioodnpqb1mxs"]
 
 [ext_resource type="PackedScene" uid="uid://ck1humn4py3sr" path="res://finalExamPractice/player.tscn" id="1_vrfeu"]
+[ext_resource type="PackedScene" uid="uid://3405qkel6888" path="res://finalExamPractice/enemy.tscn" id="2_vkkhy"]
 
 [node name="world" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_vrfeu")]
+position = Vector2(317, 341)
+
+[node name="enemy" parent="." instance=ExtResource("2_vkkhy")]
+position = Vector2(824, 299)
